@@ -9,7 +9,7 @@
                     <div class="card-header bg-orange text-white">
                         <h4 class="mb-0">Register Employee</h4>
                     </div>
-                    <div class="card-body bg-white">
+                    <div class="card-body bg-black">
                         <form method="POST" action="{{ route('employee.store') }}">
                             @csrf
                             <div class="form-row">
