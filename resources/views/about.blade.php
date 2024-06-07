@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="card mt-5 shadow-lg">
-                    <div class="card-header bg-Pink text-white">
+<div class="card mt-3 shadow-lg">
+                    <div class="card-header bg-blue text-white">
                         <h4 class="mb-0">Employee List</h4>
                     </div>
-                    <div class="card-body bg-Gray">
+                    <div class="card-body bg-gray">
                         <table class="table table-bordered table-striped">
                             <thead class="thead-bright">
                               <tr>
