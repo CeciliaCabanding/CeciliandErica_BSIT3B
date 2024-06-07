@@ -2,32 +2,32 @@
 
 @section('content')
     <div class="container">
-        <h3 align="center" class="mt-5">Employee Management</h3>
+        <h3 align="center" class="mt-5">User Profile</h3>
         <div class="row justify-content-center">
             <div class="col-md-10"> <!-- Changed col-md-8 to col-md-10 to increase the width -->
                 <div class="card shadow-lg">
-                    <div class="card-header bg-blue text-white">
+                    <div class="card-header bg-pink text-white">
                         <h4 class="mb-0">Register Employee</h4>
                     </div>
-                    <div class="card-body bg-black">
+                    <div class="card-body bg-gray">
                         <form method="POST" action="{{ route('employee.store') }}">
                             @csrf
                             <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="first_name">Employee First Name</label>
-                                    <input type="text" class="form-control" id="first_name" name="first_name" required>
+                                <div class="form-group col-md-9">
+                                    <label for="first_name">Username</label>
+                                    <input type="text" class="form-control" id="first_name" name="username" required>
                                 </div>
-                                <div class="form-group col-md-6">
-                                    <label for="last_name">Employee Last Name</label>
-                                    <input type="text" class="form-control" id="last_name" name="last_name" required>
+                                <div class="form-group col-md-9">
+                                    <label for="last_name">Email</label>
+                                    <input type="text" class="form-control" id="last_name" name="email" required>
                                 </div>
-                                <div class="form-group col-md-6">
-                                    <label for="dob">Employee DOB</label>
-                                    <input type="date" class="form-control" id="dob" name="dob" required>
+                                <div class="form-group col-md-9">
+                                    <label for="dob">Password</label>
+                                    <input type="text" class="form-control" id="password" name="password" required>
                                 </div>
-                                <div class="form-group col-md-6">
-                                    <label for="phone">Phone</label>
-                                    <input type="text" class="form-control" id="phone" name="phone" required>
+                                <div class="form-group col-md-9">
+                                    <label for="phone">Confirm Password</label>
+                                    <input type="text" class="form-control" id="pass1" name="pass1" required>
                                 </div>  
                             </div>
                             <div class="form-group">
@@ -51,6 +51,8 @@
         }
         .btn {
             border-radius: 5px;
+            background-color:pink;
+            color: pink;
         }
         .table th, .table td {
             vertical-align: middle;
