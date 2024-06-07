@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h3 align="center" class="mt-5">adie(k)</h3>
+        <h3 align="center" class="mt-5">Employee Management</h3>
         <div class="row justify-content-center">
             <div class="col-md-10"> <!-- Changed col-md-8 to col-md-10 to increase the width -->
                 <div class="card shadow-lg">
