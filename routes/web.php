@@ -28,4 +28,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('employee/{id}', [App\Http\Controllers\employeemanagement::class, 'destroy'])->name('employee.destroy');
     Route::get('profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');
     Route::put('profile', [\App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
-});
+});Route::get('/about', [\App\Http\Controllers\employeemanagement::class, 'table'])->name('about');

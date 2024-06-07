@@ -14,6 +14,13 @@ class employeemanagement extends Controller
         // Pass employees data to the view
         return view('employee.index', compact('employees'));
     }
+    public function table(){
+        $employees = employee::all();
+       // return view('employ.index');
+        
+        // Pass employees data to the view
+        return view('about', compact('employees'));
+    }
 
     public function store(Request $request)
     {
