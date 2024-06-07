@@ -22,7 +22,7 @@ class EmployeeController extends Controller
         $this->validateInput($request);
 
         // Extract necessary input
-        $keys = ['first_name', 'last_name', 'dob', 'phone'];
+        $keys = ['usernmae', 'email', 'Password', 'Confirm Password'];
         $input = $this->createQueryInput($keys, $request);
 
         // Save the data to the database
@@ -69,17 +69,17 @@ class EmployeeController extends Controller
         $employee->delete();
 
         // Redirect back to the index page with a success message
-        return redirect()->route('employee.index')->with('success', 'Employee deleted successfully!');
+        return redirect()->route('table')->with('success', 'Employee deleted successfully!');
     }
 
     // Method to validate the input
     protected function validateInput(Request $request)
     {
         $request->validate([
-            'first_name' => 'required|string|max:255',
-            'last_name' => 'required|string|max:255',
-            'dob' => 'required|date',
-            'phone' => 'required|string|max:15',
+            'username' => 'required|string|max:255',
+            'email' => 'required|string|max:255',
+            'Password' => 'required|date',
+            'Confirm Password' => 'required|string|max:15',
         ]);
     }
 

@@ -51,8 +51,7 @@
         }
         .btn {
             border-radius: 5px;
-            background-color:pink;
-            color: pink;
+          
         }
         .table th, .table td {
             vertical-align: middle;
